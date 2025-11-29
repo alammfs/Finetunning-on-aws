@@ -2,10 +2,16 @@ https://docs.google.com/document/d/1NfLe1jQUGpeX0qOQnoggl5kZroKoM9m5YLOAyhL-huA/
 project link -  https://github.com/sunnysavita10/Finetuning-on-aws
 Udemy free course - https://www.udemy.com/course/complete-mcp-bootcamp-build-next-gen-ai-agents-with-mcp/?couponCode=FREEMCP
 
+AWS bedrock - get the already hosted model, open AI/Grok
+in sage maker pipeline we hosted our own customized model.
+Scalable API, cloud architecture
+
+SQS - service - for asynchronous task execution
+celery - API execution
 Serverless finetunning using sagemaker
 then access app lambda and API gateway
 for this project we will use
-1. I am roles
+1. I am roles (we will create roles to give access between the services, suppose sagemaker wants to access S3 then we will create a role which have S3 access and attach that role to sagemaker instane)
 2. s3 buckets
 3. sagemaker instance
 4. training script for finetunning
